@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background-color: black;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e5e5e5fc;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaaaaafc;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 550px;
+}
+
+.count-box {
+    display: flex;
+    gap: 8px;
+    text-align: center;
+}
+
+.Mutual {
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition-duration: 0.3s;
+}
+
+/* .Mutual:hover {
+    border-color: #2196f3;
+    transition-duration: 0.3s;
+} */
+
+.number-of-day,
+.number-of-hours,
+.number-of-minutes,
+.number-of-seconds {
+    font-size: 40px;
+    color: #2196f3;
+    padding: 20px 0;
+}
+
+.day, .hours, .minutes, .seconds {
+    font-size: 20px;
+    border-top: 1px solid #d4d4d4;
+    color: #666;
+    padding: 10px 0;
+    transition-duration: 0.3s;
+}
+
+/* .border:hover {
+    border-color: #2196f3;
+    transition-duration: 0.3s;
+} */
+
+h1 {
+    color: #2196f3;
+}
+
+p {
+    color: #666;
+    font-size: 20px;
+}
+
+
+@media (max-width: 767px) {
+.box {
+    width: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.count-box {
+    flex-direction: column;
+    gap: 15px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    width: 100%;
+    padding: 25px;
+}
+.number-of-day,
+.number-of-hours,
+.number-of-minutes,
+.number-of-seconds {
+    font-size: 45px;
+    padding: 30px 0;
+}
+};
+
+
